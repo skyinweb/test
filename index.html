@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>datePicker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="position:relative">
+	<div style="width:400px; margin:50px auto;">
+		<div style="margin-bottom: 50px;">
+			<input type="text" id="test" data-format="yyyy-MM-dd EEE HH:mm:ss">
+		</div>
+		<div style="margin-bottom: 50px;">
+			<input type="text" id="test1" data-format="yyyy.MM.dd E H:m:s">
+		</div>
+		<div>
+			<input type="text" id="test2" data-format="yyyy年M月d日EEE">
+		</div>
+		<div id="etest">
+			测试测试<img src="" alt="">测试后测试刺耳<img src="" alt="">
+			<p>测试段落一</p>
+			<p>测试段落二</p>
+			<p>测试端落三</p>	
+		</div>
+	</div>
+	<script type="text/javascript" src="date.js"></script>
+	<script type="text/javascript">
+		new DatePicker("test");
+		new DatePicker("test1");
+		new DatePicker("test2");
+	</script>
+</body>
+</html>
